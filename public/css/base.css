@@ -15,8 +15,35 @@ body {
     color:#1E552F;
 }
 
+.error {
+    color: red;
+}
+
 .bg-dark {
     background-color: #1E552F !important;
+    color: #9DBAA6;
+}
+
+.bg-dark a {
+    color: #9DBAA6;
+}
+
+.bg-dark a:hover {
+    color: #709A7D;
+}
+
+.btn {
+    border-radius: 0px;
+    border:none;
+}
+.btn-primary {
+    background-color: #709A7D;
+    color: #1E552F;
+}
+
+.btn-primary:hover {
+    background-color: #9DBAA6;
+    color: #1E552F;
 }
 
 .card {
@@ -24,6 +51,7 @@ body {
     margin-bottom: 20px;
     border:none;
     border-radius:0px;
+
 }
 
 .card-header {
@@ -33,6 +61,32 @@ body {
 
 .card-header:first-child {
     border-radius:0px;
+}
+
+/* Forms */
+.form-control {
+    border-radius:0px;
+    border-color: #709A7D;
+    color: #1E552F;
+}
+
+.form-control:focus {
+    color: #1E552F;
+    /*
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+
+*/
+    border-color: #709A7D;
+    -webkit-box-shadow: 0px 0px 3px 3px #9DBAA6;
+    -moz-box-shadow:    0px 0px 3px 3px #9DBAA6;
+    box-shadow:         0px 0px 3px 3px #9DBAA6;
+
+}
+
+.form-control::placeholder {
+    color:#9DBAA6;
 }
 
 /* Navigation */
@@ -55,9 +109,8 @@ body {
     width:50%;
 }
 
-.footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    color:#9DBAA6;
+
+
+.page-footer ul {
+    margin:0px;
 }

@@ -38,15 +38,7 @@
         <div class="container">
         {% block body %}{% endblock %}
         </div>
-        <!-- Footer -->
-        <footer class="footer font-small bg-dark">
-
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2020 Copyright: Bund des wahren Glaubens</div>
-            <!-- Copyright -->
-
-        </footer>
-        <!-- Footer -->
+        {{ include('_footer.html.twig') }}
         {% block javascripts %}
             <!-- jQuery and Bootstrap JS -->
             <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
