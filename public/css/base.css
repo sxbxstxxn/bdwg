@@ -1,0 +1,63 @@
+/* Base Colors
+ordered from dark to bright
+#1E552F
+#366645
+#4F805E
+#709A7D
+#9DBAA6
+ */
+
+
+body {
+    background-color:#9DBAA6;
+    /*font-family: 'Athiti', sans-serif;*/
+    font-family: 'Arial', sans-serif;
+    color:#1E552F;
+}
+
+.bg-dark {
+    background-color: #1E552F !important;
+}
+
+.card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border:none;
+    border-radius:0px;
+}
+
+.card-header {
+    background-color: #709A7D;
+    font-weight: bold;
+}
+
+.card-header:first-child {
+    border-radius:0px;
+}
+
+/* Navigation */
+.navbar-dark .navbar-brand {
+    color:#FFFFFF;
+    font-weight:bold;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color:#9DBAA6;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color:#4F805E;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color:#9DBAA6;
+    font-weight:bold;
+}
+
+.logo {
+    width:50%;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    color:#9DBAA6;
+}

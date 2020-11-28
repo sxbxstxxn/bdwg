@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li {% if route_name == "index" %} class="nav-item active"{% else %} class="nav-item" {% endif %} >
+                <a class="nav-link" href="{{ path('index') }}">Home</a>
+            </li>
+            <li {% if route_name == "vorstand" %} class="nav-item active"{% else %} class="nav-item" {% endif %} >
+                <a class="nav-link" href="{{ path('vorstand') }}">Vorstand</a>
+            </li>
+            <li {% if route_name == "satzung" %} class="nav-item active"{% else %} class="nav-item" {% endif %} >
+                <a class="nav-link" href="{{ path('satzung') }}">Satzung</a>
+            </li>
+            <li {% if route_name == "kontakt" %} class="nav-item active"{% else %} class="nav-item" {% endif %} >
+                <a class="nav-link" href="{{ path('kontakt') }}">Kontakt</a>
+            </li>
+            <li {% if route_name == "datenschutz" %} class="nav-item active"{% else %} class="nav-item" {% endif %} >
+                <a class="nav-link" href="{{ path('datenschutz') }}">Datenschutz</a>
+            </li>
+            <li {% if route_name == "impressum" %} class="nav-item active"{% else %} class="nav-item" {% endif %} >
+                <a class="nav-link" href="{{ path('impressum') }}">Impressum</a>
+            </li>
+        </ul>
+    </div>
+    <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="#">Bund des wahren Glaubens</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li {% if route_name == "login" %} class="nav-item active"{% else %} class="nav-item" {% endif %} >
+                <a class="nav-link" href="{{ path('login') }}">Login</a>
+            </li>
+        </ul>
+    </div>
+</nav>
