@@ -55,4 +55,12 @@ class DefaultController extends AbstractController
     {
         return $this->render('default/impressum.html.twig');
     }
+
+    /**
+     * @Route("/hausregeln", name="hausregeln")
+     */
+    public function hausregeln(): Response
+    {
+        return $this->render('default/hausregeln.html.twig');
+    }
 }

@@ -28,6 +28,10 @@ body {
     color: #9DBAA6;
 }
 
+.dropdown-item {
+    color: #1E552F !important;
+}
+
 .bg-dark a:hover {
     color: #709A7D;
 }
